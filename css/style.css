@@ -92,7 +92,6 @@ select {
 .fs--mid {
   font-size: 2.5rem;
   text-decoration: none;
-  /* background-color: firebrick; */
   color: black;
   border: 3px solid black;
   font-weight: 700;
@@ -142,85 +141,39 @@ select {
   width: 90%;
   margin-inline: auto;
 }
-
 .mole__row {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; 
 }
-
-@media(max-width:1135px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-  }
-}
-
-@media(max-width:1089px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  }
-}
-
-@media(max-width:1089px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-  }
-}
-
-
-@media(max-width:1001px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  }
-}
-
-@media(max-width:955px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-  }
-}
-
-@media(max-width:911px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  }
-}
-
-@media(max-width:866px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-  }
-}
-
-@media(max-width:822px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  }
-}
-
-
-@media(max-width:572px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  }
-}
-
-@media(max-width:511px){
-  .mole__row{
-    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-  }
-}
-
 
 .mole__col {
-  width: 100%;
-  padding-top: 100%;
-  aspect-ratio: 1/1;
+  flex: 0 0 calc(35% - 2rem);
+  height: 8rem;
   position: relative;
   background-image: url(../images/hole__bg2.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+@media(min-width:444px){
+  .mole__col{
+    flex: 0 0 calc(25% - 2rem);
+    height: 10rem;
+  }
+}
+
+@media(max-width:467px){
+  .fs--large{
+    font-size: 4.5rem;
+  }
+
+  .fs--mid{
+    font-size: 1.6rem;
+    padding: 0.8rem 1.5rem;
+  }
 }
 
 .mole__image {
