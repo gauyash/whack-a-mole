@@ -37,7 +37,7 @@ const addMoleInHole = () => {
     if (moleCol[molePosition].contains(img)) {
       moleCol[molePosition].removeChild(img);
     }
-  }, 900);
+  }, 1100);
 };
 
 const moleHit = (molePosition, img) => {
@@ -66,7 +66,7 @@ const startGame = () => {
       containerBtn.classList.remove("active");
       clearInterval(gameStart);
     }
-  }, 1000);
+  }, 1300);
 };
 
 startBtn.addEventListener("click", startGame);
