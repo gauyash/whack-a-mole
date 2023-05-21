@@ -14,7 +14,7 @@ This is a simple Whack-a-Mole game implemented using HTML, CSS, and JavaScript. 
 3. Time-based gameplay with a countdown timer.
 4. Sound effects for hitting moles.
 5. Start and reset functionality.
-6. Responsive design for various screen sizes expect mobiles.
+6. Responsive design for various screen sizes.
 
 ## Getting Started
 - To get started with the game, follow these steps:
