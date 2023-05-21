@@ -5,7 +5,7 @@ This is a simple Whack-a-Mole game implemented using HTML, CSS, and JavaScript. 
 
 ## ScreenShot
 
-![Screenshot (4)](https://github.com/gauyash/whack-a-mole/assets/96402498/98ed1d1f-5ffd-48fd-a381-a0d24f68b865)
+![Screenshot (3)](https://github.com/gauyash/whack-a-mole/assets/96402498/1ca2f277-1fc9-48a8-9130-03cc19c56122)
 
 
 ## Link
@@ -18,7 +18,7 @@ https://gauyash.github.io/whack-a-mole/
 3. Time-based gameplay with a countdown timer.
 4. Sound effects for hitting moles.
 5. Start and reset functionality.
-6. Responsive design for various screen sizes expect mobiles.
+6. Responsive design for various screen sizes.
 
 ## Getting Started
 - To get started with the game, follow these steps:
