@@ -5,7 +5,8 @@ This is a simple Whack-a-Mole game implemented using HTML, CSS, and JavaScript. 
 
 ## ScreenShot
 
-![Screenshot (3)](https://github.com/gauyash/whack-a-mole/assets/96402498/1ca2f277-1fc9-48a8-9130-03cc19c56122)
+![Screenshot (4)](https://github.com/gauyash/whack-a-mole/assets/96402498/98ed1d1f-5ffd-48fd-a381-a0d24f68b865)
+
 
 
 ## Features
