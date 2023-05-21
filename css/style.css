@@ -140,6 +140,7 @@ select {
 .mole__container {
   width: 90%;
   margin-inline: auto;
+  max-width: 1100px;
 }
 .mole__row {
   display: flex;
