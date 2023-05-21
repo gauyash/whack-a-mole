@@ -4,8 +4,8 @@ const scoreEl = document.querySelector(".score");
 const timeEl = document.querySelector(".time");
 const startBtn = document.querySelector(".btn--start");
 const containerBtn = document.querySelector(".container__btn");
-const audioSmash = new Audio("../audio/hit-sound.mp3");
-const audioBg = new Audio("../audio/bg-music.mp3");
+const audioSmash = new Audio("./audio/hit-sound.mp3");
+const audioBg = new Audio("./audio/bg-music.mp3");
 
 let score = 0;
 let gameStart;
