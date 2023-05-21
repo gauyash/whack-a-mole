@@ -1,0 +1,232 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Reggae One", cursive;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility Classes */
+
+.fs--large {
+  font-size: 6rem;
+  color: #f70b63;
+}
+
+.fs--mid {
+  font-size: 2.5rem;
+  text-decoration: none;
+  /* background-color: firebrick; */
+  color: black;
+  border: 3px solid black;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.ta--center {
+  text-align: center;
+}
+
+/* Container */
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 7rem 0;
+}
+
+.active {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.btn--start {
+  background-color: #f70b63;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  padding: 1.3rem 2.8rem;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 400ms ease-in-out, background-color 400ms ease-in-out;
+  border: 3px solid #f70b63;
+}
+
+.btn--start:hover {
+  color: #f70b63;
+  background-color: transparent;
+}
+
+.mole__container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.mole__row {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+}
+
+@media(max-width:1135px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  }
+}
+
+@media(max-width:1089px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  }
+}
+
+@media(max-width:1089px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  }
+}
+
+
+@media(max-width:1001px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
+@media(max-width:955px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  }
+}
+
+@media(max-width:911px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+}
+
+@media(max-width:866px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  }
+}
+
+@media(max-width:822px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+
+
+@media(max-width:572px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+
+@media(max-width:511px){
+  .mole__row{
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+}
+
+
+.mole__col {
+  width: 100%;
+  padding-top: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  background-image: url(../images/hole__bg2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.mole__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
